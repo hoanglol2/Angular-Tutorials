@@ -7,6 +7,8 @@ import { ToggleComponent } from './toggle/toggle.component';
 })
 export class AppComponent implements OnInit, AfterViewInit{
   isChecked = true;
+  title = 'Angular';
+
   // viewChild() -> ta muốn tham chiếu 1 child trên view.
   @ViewChild(ToggleComponent, {static: true}) toggleComp: ToggleComponent | undefined;
 

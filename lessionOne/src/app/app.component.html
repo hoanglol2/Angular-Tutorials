@@ -1,11 +1,3 @@
 <div id="app">
-  <!-- không dùng được static trong viewChild -->
-  <div *ngIf="true">
-    <app-toggle [(checked)]="isChecked"></app-toggle>
-  </div>
-
-  <!-- dùng được static -->
-  <app-toggle [(checked)]="isChecked"></app-toggle>
-  <br/>
-  <button (click)="handleClick()">Handle click</button>
+  <app-pipe></app-pipe>
 </div>
