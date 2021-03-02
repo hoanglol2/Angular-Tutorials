@@ -27,4 +27,7 @@ export class AppComponent implements OnInit, AfterViewInit{
   ngAfterViewInit() { // resolve HTML
     console.log('After', this.toggleComp);
   }
+
 }
+
+
