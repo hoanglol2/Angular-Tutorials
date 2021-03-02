@@ -8,6 +8,7 @@ listen('3000');
 listen(3000);
 listen(true);
 
+// s;
 
 // Union Type cho gia tri tra ve cua 1 ham
 function getSomeThing(): string | number {
