@@ -1,0 +1,11 @@
+<div class="container" *ngIf="article$ | async as article else loadingTmpl">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>{{ article.title }}</h1>
+      <p>{{ article.content }}</p>
+    </div>
+  </div>
+</div>
+<ng-template #loadingTmpl>
+  loading...
+</ng-template>
