@@ -1,0 +1,19 @@
+<div class="container" *ngIf="articles$ | async as articles else loadingTmpl">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let article of articles">
+      <div class="card text-center">
+        <div class="card-header">
+          {{ article.title }}
+        </div>
+        <div class="card-body">
+          <p>{{ article.content }}</p>
+          <a [routerLink]="article.slug" class="btn btn-outline-primary">Xem {{ article.title }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #loadingTmpl>
+  loading...
+</ng-template>

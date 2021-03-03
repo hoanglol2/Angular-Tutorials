@@ -1,0 +1,22 @@
+<div class="container" *ngIf="article$ | async as article else loadingTmpl">
+  <div class="row">
+    <div class="col-6">
+      <div class="card text-center">
+        <div class="card-header">
+          {{ article.title }}
+        </div>
+        <div class="card-body">
+          <p>
+            {{ article.content }}
+          </p>
+          <a routerLink="/article/bai-viet-2" class="nav-link">Next</a>
+          <a href="#" class="nav-link" (click)="handleClick($event)">Quay lai trang cu</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #loadingTmpl>
+  loading...
+</ng-template>
